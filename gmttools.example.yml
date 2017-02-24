@@ -1,0 +1,13 @@
+hetznerpaths: 
+  deploys: '/home/bryan/tmp/deploys/'
+  webroot: '/home/bryan/tmp/webroot/'
+  localwebpath: '/public_html/web/'
+  localconfpath: '/public_html/config/'
+  empty: '/home/bryan/tmp/empty/'
+  devhost: 'something.amazee.io'
+  devhostdir: '/var/www/some_az_client_site/public_html'
+  exclude: 
+    - '.git'
+    - 'node_modules'
+  defaultsitefiles: '/home/bryan/tmp/default_files/'
+  drupalconfig: '/home/bryan/tmp/config'

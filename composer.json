@@ -1,0 +1,27 @@
+{
+  "name": "AmazeeLabs/gmtools",
+  "description": "The Amazee Global Maintenance Tools",
+  "keywords": ["drupal","console","devops","deploy"],
+  "homepage": "https://amazeelabs.com/maintenance",
+  "license": "MIT",
+  "authors": [
+    { 
+      "name": "Bryan Gruneberg", 
+      "email": "bryan.gruneberg@amazeelabs.com"
+    } 
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.5.9",
+    "symfony/console": "2.8.*|3.0.*|~3.2",
+    "symfony/yaml": "^3.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Amazee\\GMT\\": "src"
+    }
+  },
+  "bin": [
+    "bin/gmtool"
+  ]
+}
