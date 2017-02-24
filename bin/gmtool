@@ -10,6 +10,10 @@
 
 
 if (is_file($autoload = __DIR__ . '/../vendor/autoload.php')) {
+  // If installed in an app directory
+  require $autoload;
+} else if (is_file($autoload = __DIR__ . '/../../vendor/autoload.php')) {
+  // If installed globally
   require $autoload;
 }
 
