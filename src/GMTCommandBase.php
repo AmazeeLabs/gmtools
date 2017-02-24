@@ -39,7 +39,7 @@ abstract class GMTCommandBase extends Command
         $this->addOption('config','c',
           InputOption::VALUE_REQUIRED,
           'Specify a config file path',
-          getcwd() . "/" . self::GMT_CONFIG_FILE_DEFAULT);
+          self::GMT_CONFIG_FILE_DEFAULT);
     }
 
     protected function prepareConfig($configFilePath = NULL, $requireConfigFile = TRUE)
