@@ -199,6 +199,6 @@ class DeployHetznerZaCommand extends GMTCommandBase
         // -------------- COMPLETE --------------------
         $endTime = time();
         $lengthTime = round(($endTime - $startTime) / 60, 2);
-        $this->logln("DONE in " . $lengthTime . " seconds");
+        $this->logln("DONE in " . $lengthTime . " minutes");
     }
 }
