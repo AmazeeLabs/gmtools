@@ -96,7 +96,7 @@ class Utils
         copy($autoloadFile, $autoloadFile."_backup_" . date('Y_m_d_H_i_s'));
       }
 
-      $fileContents = "<?php\n\nreturn require '".self::processPath($deployDir."/vendor/autoload.php")."';\n\n";
+      $fileContents = "<?php\n\nreturn require '".self::processPath($deployDir."/public_html/vendor/autoload.php")."';\n\n";
 
       file_put_contents($autoloadFile, $fileContents);
     }
