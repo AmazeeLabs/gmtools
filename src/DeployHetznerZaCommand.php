@@ -192,8 +192,8 @@ class DeployHetznerZaCommand extends GMTCommandBase
 
 
         // -------------- STEP --------------------
-        $this->logln("Synchronize the config");
-        Utils::rsyncRecursive(Utils::processPath($deployDirConf), $hetznerDrupalConfigLocation, TRUE); 
+        $this->logln("Synchronize the config: MANUAL STEP REQUIRED");
+        $this->logln("Previously we would manually pull the config from " . $devhost. " but we have changed this to use a git link to config being stored in the prod branch of the repo. This means that like with other amazee.io hosting setup you will need to change to " . $hetznerDrupalConfigLocation . " and git pull the config from git. Then you can change to " . $devhostdir . " and run 'drush cex' or 'drush cim' depending on your requirements");
 
 
         // -------------- COMPLETE --------------------
